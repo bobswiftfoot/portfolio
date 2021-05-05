@@ -1,0 +1,121 @@
+:root
+{
+    --primary-color: aqua;
+    --secondary-color: #024e76;
+    --tertiary-color: gold;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    color: var(--primary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+ /*header*/
+header
+{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 9999;
+}
+
+header h1
+{
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+header a
+{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header nav
+{
+    margin: 7px;
+    width: 100%;
+    height: 100%;
+}
+
+header nav ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a 
+{
+    padding: 5px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+header nav ul li a:hover
+{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+}
+/*end Header*/
+
+/*Tablet size or bigger*/
+@media screen and (min-width:768px) 
+{
+    header nav ul li a 
+    {
+        font-size: 20px;
+    }
+}
+
+/*Desktop size or bigger*/
+@media screen and (min-width:1024px) 
+{
+    header
+    {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 10px;
+    }
+
+    header h1
+    {
+        width: 30%;
+        font-size: 45px;
+        text-align: left;
+    }
+
+    header nav
+    {
+        width: 60%;
+    }
+
+    header nav ul li
+    {
+        display: flex;
+        align-items: center;
+    }
+    
+    header nav ul li a 
+    {
+        font-size: 25px;
+    }
+}
