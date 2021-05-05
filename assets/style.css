@@ -76,12 +76,55 @@ header nav ul li a:hover
 }
 /*end Header*/
 
+/*Hero*/
+.hero
+{
+    background-image: url("./images/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero img
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.hero p
+{
+    margin: auto;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 5px 5px 0 5px;
+}
+/*end Hero*/
+
 /*Tablet size or bigger*/
 @media screen and (min-width:768px) 
 {
     header nav ul li a 
     {
         font-size: 20px;
+    }
+
+    .hero img
+    {
+        justify-content: flex-start;
+        max-width: 30%;
+    }
+
+    .hero p 
+    {
+        justify-content: flex-end;
+        margin-right: 0;
+        width: 30%;
+        font-size: 25px;
     }
 }
 
@@ -117,5 +160,11 @@ header nav ul li a:hover
     header nav ul li a 
     {
         font-size: 25px;
+    }
+
+    .hero p 
+    {
+        font-size: 30px;
+        width: 25%;
     }
 }
