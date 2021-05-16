@@ -164,6 +164,41 @@ h2
 }
 /*End Work*/
 
+/*Contact*/
+.contact-me
+{
+    background-color: var(--tertiary-color);
+    padding: 10px;
+    color: var(--secondary-color);
+}
+
+.contact-me a
+{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.contact-me ul
+{
+    text-align: center;
+    padding-top: 10px;
+    list-style: none;
+}
+
+.contact-me ul li
+{
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-me ul li:hover
+{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+}
+/*End Contact*/
+
 /*Tablet size or bigger*/
 @media screen and (min-width:768px) 
 {
@@ -221,6 +256,27 @@ h2
         display: flex;
         justify-content: space-between;
     }
+    
+    .contact-me
+    {
+        display: flex;
+        justify-content:flex-end;
+    }
+
+    .contact-me ul
+    {
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact-me ul li 
+    {
+        width: 20%;
+        font-size: 20px;
+        border-bottom: 3px solid;
+    }
 
 }
 /*Desktop size or bigger*/
@@ -272,5 +328,10 @@ h2
     .about-me p
     {
         font-size: 25px;
+    }
+
+    .contact-me ul li 
+    {
+        font-size: 25px;;
     }
 }
