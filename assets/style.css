@@ -105,15 +105,7 @@ header nav ul li a:hover
 }
 /*end Hero*/
 
-/*About*/
-.about-me
-{
-    background-color: var(--tertiary-color);
-    padding: 10px;
-    color: var(--secondary-color);
-}
-
-.about-me h2
+h2
 {
     font-size: 28px;
     display: flex;
@@ -122,12 +114,55 @@ header nav ul li a:hover
     border-bottom: 3px solid;
 }
 
+/*About*/
+.about-me
+{
+    background-color: var(--tertiary-color);
+    padding: 10px;
+    color: var(--secondary-color);
+}
 .about-me p
 {
     text-align: center;
     padding-top: 5px;
 }
 /*End About*/
+
+/*Work*/
+.work
+{
+    background-color: var(--tertiary-color);
+    padding: 10px;
+    color: var(--secondary-color);
+}
+
+.project-wrapper
+{
+    padding: 10px;
+}
+
+.project
+{
+    width: 100%;
+    position: relative;
+}
+
+.work h3
+{
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    background-color: var(--primary-color);
+    padding: 5px;
+}
+
+.work img
+{
+    width: 100%;
+    padding: 10px;
+}
+/*End Work*/
 
 /*Tablet size or bigger*/
 @media screen and (min-width:768px) 
@@ -156,23 +191,38 @@ header nav ul li a:hover
         display: flex;
         justify-content:flex-end;
     }
-    .about-me h2
+
+    h2
     {
         width: 15%;
         border-bottom: 0px;
         border-right: 3px solid;
-        justify-content: right;
+        justify-content:flex-end;
         text-align: right;
         padding-right: 5px;
         margin-right: 20px;
     }
+
     .about-me p
     {
         display: flex;
         width: 80%;
     }
-}
 
+    .work
+    {
+        display: flex;
+        justify-content:flex-end;
+    }
+
+    .project-wrapper
+    {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
 /*Desktop size or bigger*/
 @media screen and (min-width:1024px) 
 {
@@ -213,7 +263,7 @@ header nav ul li a:hover
         width: 25%;
     }
 
-    .about-me h2
+    h2
     {
         font-size: 45px;
         width: 15%;
