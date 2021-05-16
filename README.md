@@ -1,14 +1,12 @@
 # Portfolo
-
-## Purpose
 A website that shows my work and contact info
 
 ## Built With
 * HTML
 * CSS
 
-## Website
+## Deployed link
 https://bobswiftfoot.github.io/oortfolio/
 
-## Contribution
-Made by Nathan Pfau
+# Screenshot of page
+![Full Page Screenshot](/Screenshots/full-page-screenshot.png?raw=true)
