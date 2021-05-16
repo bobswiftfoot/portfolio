@@ -2,7 +2,7 @@
 {
     --primary-color: aqua;
     --secondary-color: #024e76;
-    --tertiary-color: gold;
+    --tertiary-color: lightgrey;
 }
 
 * 
@@ -105,6 +105,30 @@ header nav ul li a:hover
 }
 /*end Hero*/
 
+/*About*/
+.about-me
+{
+    background-color: var(--tertiary-color);
+    padding: 10px;
+    color: var(--secondary-color);
+}
+
+.about-me h2
+{
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 3px solid;
+}
+
+.about-me p
+{
+    text-align: center;
+    padding-top: 5px;
+}
+/*End About*/
+
 /*Tablet size or bigger*/
 @media screen and (min-width:768px) 
 {
@@ -125,6 +149,27 @@ header nav ul li a:hover
         margin-right: 0;
         width: 30%;
         font-size: 25px;
+    }
+
+    .about-me
+    {
+        display: flex;
+        justify-content:flex-end;
+    }
+    .about-me h2
+    {
+        width: 15%;
+        border-bottom: 0px;
+        border-right: 3px solid;
+        justify-content: right;
+        text-align: right;
+        padding-right: 5px;
+        margin-right: 20px;
+    }
+    .about-me p
+    {
+        display: flex;
+        width: 80%;
     }
 }
 
@@ -166,5 +211,16 @@ header nav ul li a:hover
     {
         font-size: 30px;
         width: 25%;
+    }
+
+    .about-me h2
+    {
+        font-size: 45px;
+        width: 15%;
+    }
+
+    .about-me p
+    {
+        font-size: 25px;
     }
 }
