@@ -1,4 +1,4 @@
-# Portfolo
+# Portfolio
 A website that shows my work and contact info
 
 ## Built With
