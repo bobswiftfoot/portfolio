@@ -3,13 +3,21 @@ import petSittingImg from '../../images/pet-sitting.png';
 import pokemonDatabaseImg from '../../images/pokemon-database.PNG';
 import readmeGeneratorImg from '../../images/readme-generator.PNG';
 import codeQuizImg from '../../images/code-quiz.png';
-import runBuddyImg from '../../images/run-buddy.png';
+import petShopImg from '../../images/pet-shop.png';
 import budgetTrackerImg from '../../images/budget-tracker.png';
 import Project from '../Project';
 
 function Projects()
 {
     const projects = [
+        {
+            name: "petStore",
+            title: "Pet Store - Full Stack",
+            img: petShopImg,
+            description: "A website to buy pet food and accessories.",
+            live: "https://codefellas-pet-shop.herokuapp.com/",
+            gitHub: "https://github.com/bobswiftfoot/pet-shop"
+        },
         {
             name: "petSitting",
             title: "Pet Sitting - Full Stack",
@@ -41,14 +49,6 @@ function Projects()
             description: "A quiz app to test your coding knowledge.",
             live: "https://bobswiftfoot.github.io/code-quiz/",
             gitHub: "https://github.com/bobswiftfoot/code-quiz/"
-        },
-        {
-            name: "runBuddy",
-            title: "Run Buddy - HTML/CSS",
-            img: runBuddyImg,
-            description: "A sample fitness website.",
-            live: "https://bobswiftfoot.github.io/run-buddy/",
-            gitHub: "https://github.com/bobswiftfoot/run-buddy/"
         },
         {
             name: "budgetTracker",
