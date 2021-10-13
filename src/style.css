@@ -11,14 +11,19 @@ body
     font-family: Helvetica, Arial, sans-serif;
 }
 
-nav
+.nav
 {
     background-color: var(--secondary-color);
 }
 
-.nav-link, .navbar-brand
+.nav-link, .bs-nav-brand
 {
     color: var(--primary-color);
+}
+
+.nav-link.active
+{
+    color: black;
 }
 
 /*Hero*/
@@ -105,7 +110,29 @@ nav
 {
     color: var(--secondary-color);
 }
+
+.petSittingModal
+{
+    background-image: url("./images/pet-sitting.png");
+}
+
+.pokemonModal
+{
+    background-image: url("./images/pokemon-database.PNG");
+}
 /*End Modal*/
+
+.contact-form
+{
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+.error-text
+{
+    color: red;
+}
+
 
 @media (min-width: 992px) 
 {
