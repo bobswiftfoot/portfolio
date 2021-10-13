@@ -11,10 +11,7 @@ function App()
 {
   const [currentPage, handlePageChange] = useState('About');
 
-  useEffect(() =>
-  {
-      document.title = currentPage;
-  }, [currentPage]);
+  document.title = "Nathan Pfau Portfolio";
 
   function renderPage()
   {
