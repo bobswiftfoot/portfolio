@@ -3,7 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 function Header(props)
 {
-    const tabs = ['About', 'Portfolio', 'Contact', 'Resume'];
+    const tabs = ['About', 'Projects', 'Resume'];
     return (
         <section key="Header">
             <Navbar className="nav container-fluid" expand="lg" sticky="top">

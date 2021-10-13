@@ -4,7 +4,7 @@ import profilePic from '../../images/profile-picture.png';
 function About()
 {
     return (
-        <div key="About">
+        <div key="About" id="about">
             <section className="hero row justify-content-center">
                 <img className="col col-12 col-md-6 col-lg-2 img-fluid" src={profilePic} />
                 <div className="row justify-content-center">
@@ -14,7 +14,7 @@ function About()
 
             <section id="about-me" className="about-me row p-3">
                 <p className="col">
-                    Web Developer with game development experience. Certificate in Web Development from University of Phoenix and Bachelors in Game Development from Full Sail University. Skills in HTML, CSS, Javascript, C#, Node.js and strengths in teamwork, planning and organization including Scrum Master training. I launched a variety of slot machine games including standalone and server connected games. I worked on a team of 3 to create an HTML website to organize a set of APIs for easy user access. I am excited to put my problem solving skills to work by assessing, creating and improving on a variety of programs.
+                    Web Developer with game development experience. Certificate in Web Development from University of Arizona and Bachelors in Game Development from Full Sail University. Skills in HTML, CSS, Javascript, C#, Node.js and strengths in teamwork, planning and organization including Scrum Master training. I launched a variety of slot machine games including standalone and server connected games. I worked on a team of 3 to create an HTML website to organize a set of APIs for easy user access. I am excited to put my problem solving skills to work by assessing, creating and improving on a variety of programs.
                 </p>
             </section>
 

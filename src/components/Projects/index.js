@@ -7,7 +7,7 @@ import runBuddyImg from '../../images/run-buddy.png';
 import budgetTrackerImg from '../../images/budget-tracker.png';
 import Project from '../Project';
 
-function Portfolio()
+function Projects()
 {
     const projects = [
         {
@@ -60,7 +60,7 @@ function Portfolio()
         }];
 
     return (
-        <section key="Portfolio" className="work row p-3">
+        <section key="Projects" className="work row p-3" id="projects">
             <div className="project-wrapper col">
                 <div className="row gx-0">
                     {projects.map((value, index) => (
@@ -73,4 +73,4 @@ function Portfolio()
     );
 }
 
-export default Portfolio;
+export default Projects;

@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import About from './components/About';
-import Portfolio from './components/Portfolio';
+import Projects from './components/Projects';
 import Footer from './components/Footer';
-import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
@@ -22,15 +21,17 @@ function App()
     switch(currentPage)
     {
       case "About":
-        return(<About></About>);
-      case "Portfolio":
-        return(<Portfolio></Portfolio>);
-      case "Contact":
-        return(<ContactForm></ContactForm>);
+        return(<>
+              <About></About> 
+              <Projects></Projects>
+              </>);
       case "Resume":
         return(<Resume></Resume>);
       default:
-        return(<About></About>);
+        return (<>
+              <About></About>
+              <Projects></Projects>
+              </>);
     }
   };
 
